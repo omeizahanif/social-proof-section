@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-gray-magenta: hsl(303, 10%, 53%);
+    --light-gray-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray-magenta);
+}
+
+.container {
+    width: 70%;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.left-col h1,
+.ratings p {
+    color: var(--dark-magenta);
+}
+
+.left-col h1 {
+    margin-top: 0;
+}
+
+.left-col p {
+    color: var(--dark-gray-magenta);
+    margin: .5em 0 0 0;
+}
+
+.right-col {
+    background-color: var(--white);
+}
+
+.ratings {
+    background-color: var(--light-gray-magenta);
+    padding: 1em;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ratings span {
+    display: inline-block;
+}
+
+.ratings p {
+    margin-bottom: 0;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.testimonial {
+    background-color: var(--dark-magenta);
+}
+
+.testimonial-name,
+.testimonial-content {
+    color: var(--white);
+}
+
+.testimonial-verified {
+    color: var(--soft-pink);
+}
+
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+}
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
