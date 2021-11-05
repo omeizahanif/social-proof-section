@@ -22,13 +22,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-gray-magenta);
+    background-color: var(--white);
+    position: relative;
+}
+
+.top-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .container {
     width: 80%;
     padding: 1rem;
-    background-color: #fff;
+    
 }
 
 .hero {
@@ -36,6 +49,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin: 2rem 0;
 }
 
 .left-col h1,
@@ -124,6 +138,10 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg");
     }
 }
 
